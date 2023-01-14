@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.16.3)
 project(tensorboard_logger)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 option(BUILD_TEST "Build test" OFF)
 
 find_package(Protobuf REQUIRED)
